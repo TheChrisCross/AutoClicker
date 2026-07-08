@@ -35,3 +35,9 @@ This regenerates the icon (`GenerateIcon.ps1`) and compiles `Program.cs` to `Aut
 
 - Windows only (uses `user32.dll` — `RegisterHotKey`, `SetCursorPos`, `mouse_event`)
 - No installation, no configuration files, no network access
+
+## Support
+
+If this tool saves you some clicks, you can support development here:
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/TheChrisCross)
