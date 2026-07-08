@@ -2,7 +2,13 @@
 
 A lightweight auto-clicker for Windows with a dark-themed UI, global hotkeys, and a draggable on-screen target marker. Single C# source file, no dependencies beyond the .NET Framework that ships with Windows.
 
-![Windows](https://img.shields.io/badge/platform-Windows-blue) ![.NET Framework 4.0+](https://img.shields.io/badge/.NET%20Framework-4.0%2B-purple)
+![Windows](https://img.shields.io/badge/platform-Windows-blue) ![.NET Framework 4.0+](https://img.shields.io/badge/.NET%20Framework-4.0%2B-purple) [![Latest release](https://img.shields.io/github/v/release/TheChrisCross/AutoClicker)](https://github.com/TheChrisCross/AutoClicker/releases/latest)
+
+## Download
+
+**[⬇ Download AutoClicker.exe](https://github.com/TheChrisCross/AutoClicker/releases/latest/download/AutoClicker.exe)** — ready to run, no installation. Or grab it from the [Releases page](https://github.com/TheChrisCross/AutoClicker/releases).
+
+> Windows SmartScreen may warn on first run because the exe is unsigned — click **More info → Run anyway**, or build it yourself from source (see below).
 
 ## Features
 
