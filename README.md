@@ -113,6 +113,14 @@ To build only the local `dist` artifact:
 - Virtual-desktop-aware coordinates for multi-monitor setups
 - Multi-resolution icon resources at 16, 20, 24, 32, 40, 48, 64, 128, and 256 pixels
 
+## Contributing
+
+Bug reports, feature ideas, documentation improvements, and focused code contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before getting started, and follow the [Code of Conduct](CODE_OF_CONDUCT.md) in all project spaces.
+
+## License
+
+AutoClicker is licensed under the [MIT License](LICENSE).
+
 ## Support
 
 If AutoClicker saves you some repetitive clicking, you can support its development here:

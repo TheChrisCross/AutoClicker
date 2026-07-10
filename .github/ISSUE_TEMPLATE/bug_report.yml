@@ -1,0 +1,85 @@
+name: Bug report
+description: Report a reproducible problem with AutoClicker
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Search existing issues first and do not include sensitive information.
+  - type: input
+    id: version
+    attributes:
+      label: AutoClicker version or commit
+      description: Enter the release version or commit hash you tested.
+      placeholder: v1.0.0 or a commit hash
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: How did you run AutoClicker?
+      options:
+        - Downloaded release executable
+        - Built from source
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Include the edition and version or build number if known.
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: Explain what went wrong and when it occurs.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest reliable sequence that reproduces the problem.
+      placeholder: |
+        1. Set the interval to ...
+        2. Select ...
+        3. Press ...
+        4. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include the exact error text if one appeared.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add screenshots, screen layout details, or other information that may help. Remove private data first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched the existing issues for a duplicate.
+          required: true
+        - label: I can reproduce this problem with the steps above.
+          required: true
+        - label: I removed passwords, tokens, personal data, and other sensitive information.
+          required: true

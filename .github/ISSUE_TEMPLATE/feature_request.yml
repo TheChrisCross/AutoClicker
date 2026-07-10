@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest an improvement to AutoClicker
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement. Search existing issues first and explain the user problem before proposing an implementation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What repetitive task or limitation would this feature address?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior you would like, including any controls or hotkeys involved.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe workarounds or other designs you considered.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add mockups, examples, or compatibility details if useful. Remove private data first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched the existing issues for a duplicate request.
+          required: true
+        - label: This request is related to AutoClicker's documented purpose.
+          required: true
+        - label: I have not included passwords, tokens, personal data, or other sensitive information.
+          required: true
