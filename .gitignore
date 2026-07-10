@@ -1,3 +1,9 @@
 *.exe
 bin/
 obj/
+dist/
+.local-backups/
+.local-test/
+AutoClicker-icon-preview.png
+icon-small-size-sheet.png
+redesign-window*.png
