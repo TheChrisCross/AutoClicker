@@ -121,6 +121,10 @@ Bug reports, feature ideas, documentation improvements, and focused code contrib
 
 AutoClicker is licensed under the [MIT License](LICENSE).
 
+## Security
+
+Report suspected vulnerabilities privately by following the [security policy](SECURITY.md). Do not include exploit details in a public issue.
+
 ## Support
 
 If AutoClicker saves you some repetitive clicking, you can support its development here:
