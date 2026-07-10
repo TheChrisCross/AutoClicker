@@ -1,53 +1,92 @@
-# AutoClicker
+# AutoClicker: free auto clicker for Windows
 
-A lightweight precision auto-clicker for Windows with a polished dark interface, global hotkeys, finite runs, live feedback, and a draggable target marker. It remains a single-file C# application with no runtime dependencies beyond the .NET Framework included with Windows.
+AutoClicker is a free, portable auto clicker for Windows 10 and Windows 11. It automates left, right, or middle mouse clicks at a fixed screen position with adjustable intervals, optional random variance, repeat counts, single or double clicks, and global keyboard hotkeys.
 
-![Windows](https://img.shields.io/badge/platform-Windows-blue) ![.NET Framework 4.0+](https://img.shields.io/badge/.NET%20Framework-4.0%2B-purple) [![Latest release](https://img.shields.io/github/v/release/TheChrisCross/AutoClicker)](https://github.com/TheChrisCross/AutoClicker/releases/latest)
+The app runs as a single Windows executable. It has no installer, accounts, ads, telemetry, or network access. The complete C# and WinForms source code is available in this repository.
 
-## Download
+[![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows)](https://github.com/TheChrisCross/AutoClicker/releases/latest)
+[![C#](https://img.shields.io/badge/C%23-WinForms-512BD4?logo=csharp)](Program.cs)
+[![.NET Framework 4.0+](https://img.shields.io/badge/.NET%20Framework-4.0%2B-512BD4)](https://dotnet.microsoft.com/)
+[![Latest release](https://img.shields.io/github/v/release/TheChrisCross/AutoClicker)](https://github.com/TheChrisCross/AutoClicker/releases/latest)
 
-**[Download AutoClicker.exe](https://github.com/TheChrisCross/AutoClicker/releases/latest/download/AutoClicker.exe)** from the latest public release, or build the current source locally using the instructions below.
+![AutoClicker for Windows showing click interval, repeat count, global hotkeys, and target position controls](docs/images/autoclicker-windows.png)
 
-> Windows SmartScreen may warn on first run because the executable is unsigned. You can choose **More info > Run anyway**, or build it from source.
+## Download AutoClicker for Windows
 
-## Highlights
+**[Download AutoClicker.exe](https://github.com/TheChrisCross/AutoClicker/releases/latest/download/AutoClicker.exe)** from the latest published release. AutoClicker is portable, so you can place the executable in any folder and run it without installation.
 
-- **Clear run state** with a prominent Start / Stop control, live status, and click counter
-- **Global hotkeys** that work when the window is not focused:
-  - `F6` starts or stops clicking
-  - `F7` immediately captures the current mouse position
-- **Fast interval presets** for 100 ms, 500 ms, 1 second, and 5 seconds
-- **Configurable timing** from 10 ms to 10 minutes with optional random variance
-- **Single or double click** support
-- **Finite runs** using Repeat count, or `0` to run until stopped
-- **Left, right, and middle mouse buttons**
-- **Flexible target selection**:
-  - Enter X and Y coordinates
-  - Use the two-second capture button
-  - Press `F7` for immediate capture
-  - Drag the always-on-top target marker
-- **Escape emergency stop** while the AutoClicker window is focused
-- **Always-on-top option** for the main window
-- **Hotkey conflict warnings** when F6 or F7 is already in use
-- **Multi-monitor coordinate support** based on the current Windows virtual desktop
-- **Professional multi-resolution icon** with 16, 20, 24, 32, 40, 48, 64, 128, and 256 px resources
+Windows SmartScreen may show a warning on first launch because the executable is not code-signed. Choose **More info > Run anyway**, or review the source and build the executable locally.
 
-## Usage
+The source on the `main` branch may be newer than the latest packaged release.
+
+## Auto clicker features
+
+- Adjustable click interval from 10 milliseconds to 10 minutes
+- Quick presets for 100 ms, 500 ms, 1 second, and 5 seconds
+- Optional random timing variance for less uniform click timing
+- Left, right, and middle mouse button automation
+- Single-click and double-click modes
+- Unlimited clicking or a fixed repeat count
+- Exact X and Y target coordinates across multiple monitors
+- Two-second cursor-position capture
+- Draggable target marker for visual position selection
+- Global `F6` hotkey to start or stop clicking
+- Global `F7` hotkey to capture the current cursor position
+- `Escape` emergency stop while the AutoClicker window is focused
+- Live click counter, run status, and finite-run progress
+- Always-on-top option
+- No accounts, telemetry, ads, or network requests
+
+## How to use the auto clicker
 
 1. Run `AutoClicker.exe`.
 2. Set the click interval and optional random variance.
-3. Choose single or double click, mouse button, and repeat count.
-4. Choose a target:
-   - Press `F7` while the pointer is over the target.
-   - Click **Capture position in 2 seconds**, then move the pointer.
-   - Enter X and Y coordinates.
-   - Show and drag the target marker.
-5. Press `F6` or click **Start clicking**.
-6. Press `F6`, click **Stop clicking**, or press `Escape` in the focused app window to stop.
+3. Choose single or double click, the mouse button, and a repeat count. Use `0` to click until stopped.
+4. Choose the target position:
+   - Place the cursor over the target and press `F7`.
+   - Select **Capture position in 2 seconds**, then move the cursor.
+   - Enter the X and Y coordinates directly.
+   - Select **Show draggable target** and move the crosshair.
+5. Press `F6` or select **Start clicking**.
+6. Press `F6`, select **Stop clicking**, or press `Escape` while the app is focused to stop.
 
-Settings are locked while a run is active so each run uses a stable configuration. The target marker hides automatically before clicking begins.
+AutoClicker locks its settings during a run so the click interval and target cannot change accidentally. The draggable marker hides before automated clicking begins.
 
-## Building
+## Frequently asked questions
+
+### What is an auto clicker?
+
+An auto clicker is a desktop utility that sends repeated mouse clicks automatically. It is useful for repetitive computer tasks, software testing, accessibility workflows, and applications that require repeated input.
+
+### Is AutoClicker free?
+
+Yes. The Windows executable and the complete source code are available from this GitHub repository at no charge.
+
+### Does AutoClicker work on Windows 10 and Windows 11?
+
+AutoClicker is built for 64-bit Windows 10 and Windows 11. It uses the .NET Framework included with Windows and does not require the modern .NET SDK to run.
+
+### Is this a portable auto clicker?
+
+Yes. AutoClicker runs from a single `.exe` file and does not need an installer. You can keep it on the desktop, in a tools folder, or on removable storage.
+
+### Can it click a fixed position?
+
+Yes. Enter exact screen coordinates, press `F7` over a target, use the two-second capture button, or drag the target marker. Coordinates are based on the full Windows virtual desktop, including multiple monitors.
+
+### Can it randomize the time between clicks?
+
+Yes. Set a base click interval and an optional random variance in milliseconds. AutoClicker recalculates the delay before each click.
+
+### Does it click a background window without moving the cursor?
+
+No. The global hotkeys work while AutoClicker is not focused, but clicks are sent to the selected desktop coordinates through the Windows `SendInput` API. AutoClicker moves the system cursor to that position; it does not inject clicks into a hidden or background-only window.
+
+### Does AutoClicker connect to the internet?
+
+No. The application has no network, update-checking, account, advertising, or telemetry code. You can inspect `Program.cs` or build the executable yourself.
+
+## Build from source
 
 The build uses the C# compiler bundled with the .NET Framework. Visual Studio and the modern .NET SDK are not required.
 
@@ -55,11 +94,7 @@ The build uses the C# compiler bundled with the .NET Framework. Visual Studio an
 .\Build.ps1
 ```
 
-The script:
-
-1. Regenerates the multi-resolution icon.
-2. Compiles an optimized x64 executable into `dist\AutoClicker.exe`.
-3. Copies the verified build to `OneDrive\Desktop\AutoClicker.exe` on this development machine.
+The build script regenerates the multi-resolution Windows icon, compiles an optimized x64 executable into `dist\AutoClicker.exe`, and copies the successful build to the development machine's desktop.
 
 To build only the local `dist` artifact:
 
@@ -67,16 +102,19 @@ To build only the local `dist` artifact:
 .\Build.ps1 -SkipDesktopCopy
 ```
 
-## Technical notes
+## Technical details
 
-- Windows only
-- Uses `RegisterHotKey`, `SetCursorPos`, and `SendInput` from `user32.dll`
-- Uses a cancellation event for fast stops without blocking the UI thread
-- Snapshots settings before each run to avoid cross-thread control access
-- No installation, accounts, telemetry, or network access
+- C# WinForms desktop application
+- Windows x64 executable
+- `RegisterHotKey` for global F6 and F7 controls
+- `SendInput` and `SetCursorPos` for mouse automation
+- Event-based cancellation for responsive stopping
+- Immutable run settings to avoid UI and worker-thread races
+- Virtual-desktop-aware coordinates for multi-monitor setups
+- Multi-resolution icon resources at 16, 20, 24, 32, 40, 48, 64, 128, and 256 pixels
 
 ## Support
 
-If this tool saves you some clicks, you can support development here:
+If AutoClicker saves you some repetitive clicking, you can support its development here:
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/TheChrisCross)
